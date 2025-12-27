@@ -5,4 +5,8 @@ div{
     justify-content: center;
     text-align: center;
     background: yellow;
+    padding: 10px;
+}
+p{
+    border: black solid 1px;
 }

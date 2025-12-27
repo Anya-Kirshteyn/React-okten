@@ -16,5 +16,8 @@ export const CharacterComponent:FC<PropType> = ({simpson,children}) => {
             <img src={simpson.photo} alt={simpson.name} width='150' />
             <p>{children}</p>
         </div>
+
     )
 }
+
+
