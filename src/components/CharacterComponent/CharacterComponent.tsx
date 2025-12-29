@@ -4,11 +4,11 @@ import type {Isimpson} from "../../models/ISimpson.ts";
 
 
 
-export type PropType={
+export type CharacterPropsType = {
     simpson:Isimpson;
     children:ReactNode
 }
-export const CharacterComponent:FC<PropType> = ({simpson,children}) => {
+export const CharacterComponent:FC<CharacterPropsType  > = ({simpson,children}) => {
     return (
         <div>
             <h2>{simpson.name} {simpson.surname}</h2>

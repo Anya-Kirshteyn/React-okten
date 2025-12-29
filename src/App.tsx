@@ -1,16 +1,13 @@
 import './App.css'
-import {CharacterComponent} from "./components/CharacterComponent/CharacterComponent.tsx";
-import {simpsons} from "./data/simpsonsArray.ts";
+
+import {FamilyComponent} from "./components/FamilyComponent/FamilyComponent.tsx";
 
 function App() {
 
 
   return (
     <>
-        {simpsons.map((simpsons,index) => (
-            <CharacterComponent key={index} simpson={simpsons}>
-                {simpsons.info} </CharacterComponent>
-        ))}
+        <FamilyComponent/>
 
     </>
   )
@@ -18,7 +15,7 @@ function App() {
 
 export default App
 
-
+//для rainbow-hover эффекта
 // return (
 //     <div
 //         onMouseMove={(e) =>
