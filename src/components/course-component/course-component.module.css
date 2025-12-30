@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.timeDiv{
+    border: black solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.oneCourseContainer{
+    border: black solid 2px;
+    max-width: 1280px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+}
+body{
+    background-image:url("src/assets/codePictureMatrix.jpg");
+    background-size: cover;
+
+}
