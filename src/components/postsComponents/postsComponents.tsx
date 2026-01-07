@@ -1,7 +1,7 @@
 import PostComponent from "../postComponent/postComponent.tsx";
 import {getPosts} from "../../services/post-api-service.ts";
 import {useEffect,useState} from "react";
-import {PostType} from "../../models/postType.ts";
+import type {PostType} from "../../models/postType.ts";
 
 
 const PostsComponent = () => {
