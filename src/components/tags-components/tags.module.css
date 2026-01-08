@@ -1,0 +1,19 @@
+.tag{
+    list-style-type: none;
+
+}
+li::before{
+    content: "\2690";
+
+}
+.tag{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.tag li{
+    display: flex;
+    align-items: center;
+
+}
