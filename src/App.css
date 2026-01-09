@@ -1,4 +1,6 @@
-
+*{
+  overflow: scroll;
+}
 
 
 #root {
