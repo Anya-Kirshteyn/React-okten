@@ -3,6 +3,7 @@ import type {FC} from "react";
 import styles from './productComponent.module.css'
 import MetaButtonComponent from "../meta-button-component/metaButtonComponent.tsx";
 import ReviewsComponents from "../reviews/reviewsComponents.tsx";
+import TagsComponents from "../tags-components/tags-componets.tsx";
 
 
 export type ProductPropsType = {
@@ -24,6 +25,8 @@ const ProductComponent:FC<ProductPropsType> = ({product}) => {
                 </div>
                 <img src={product.thumbnail} alt={product.title}/>
             </div>
+
+                <TagsComponents tags={product.tags} key={product.id}/>
 
             <div className={styles.salesInformation}>
                 <b>Price:{product.price}</b>
