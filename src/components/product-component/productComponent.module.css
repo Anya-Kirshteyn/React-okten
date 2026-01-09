@@ -15,3 +15,29 @@
     align-items: center;
 
 }
+
+.mainInfo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stockInfo{
+    color: #6f6c6c;
+    display: flex;
+    justify-content: space-evenly;
+    border: 4px dotted rgba(138, 130, 162, 0.5);
+}
+
+.tagalike{
+    display: flex;
+    justify-content: space-evenly;
+}
+.capacity{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.description{
+
+
+}

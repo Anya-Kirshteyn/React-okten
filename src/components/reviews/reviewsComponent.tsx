@@ -12,7 +12,7 @@ const ReviewsComponent:FC<ReviewProps>=({review})=>{
             <div className={styles.header}>
                 <b>{review.reviewerName}</b>
                 <small>Email:{review.reviewerEmail}</small>
-                <p>Rating:⭐{review.rating}</p>
+                <p>User rating:⭐{review.rating}</p>
             </div>
             <p>{review.comment}</p>
             <small>{new Date(review.date).toLocaleDateString()}</small>
