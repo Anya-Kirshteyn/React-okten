@@ -2,8 +2,8 @@
     list-style-type: none;
 
 }
-li::before{
-    content: "\2690";
+.tag li::before{
+    content: "\2765";
 
 }
 .tag{

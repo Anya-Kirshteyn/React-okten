@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.reviews{
+    border: #888888 solid 1px;
+    border-radius: 10px;
+    background-color: #cfc4ef;
+}
+.review p{
+    border-bottom: #888888 solid 1px;
+}

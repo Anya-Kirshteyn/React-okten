@@ -34,10 +34,20 @@
 }
 .capacity{
     display: flex;
+    flex-direction: column;
+}
+.capacity p{
+    margin-bottom: 10px;
+}
+.descriptionNumbers{
+    display: flex;
+    justify-content: space-evenly;
+}
+.salesInformation{
+    display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
-.description{
-
-
+.reviews{
+    border: #888888 solid 1px;
 }

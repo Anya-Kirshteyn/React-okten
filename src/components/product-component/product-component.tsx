@@ -21,39 +21,39 @@ const ProductComponent:FC<ProductPropsType> = ({product}) => {
                        <p>Rating:⭐{product.rating}</p>
                    </div>
                     <p>{product.description}</p>
-                    <div className={styles.stockInfo}>
-                    <small>left in stock: {product.stock} </small>
-                    <small>stock status: {product.availabilityStatus}</small>
-                    </div>
+
                     <div className={styles.tagalike}>
                         <p>category:{product.category}</p>
 
                         <TagsComponents tags={product.tags} key={product.id}/>
                     </div>
+                    <div className={styles.descriptionNumbers}>
+                        <div className={styles.salesInformation}>
+                            <b>Price:{product.price} $</b>
+                            <mark>discount %:{product.discountPercentage}</mark>
+                            <small>SKU code: {product.sku}</small>
+                        </div>
+
+                        <div  className={styles.capacity}>
+                                <p>weight: {product.weight}g</p>
+                                dimensions:
+                                <ul>
+                                    <li>width:{product.dimensions.width}</li>
+                                    <li>height:{product.dimensions.height}</li>
+                                    <li>depth:{product.dimensions.depth}</li>
+                                </ul>
+                        </div>
+                    </div>
                 </div>
                 <img src={product.thumbnail} alt={product.title}/>
             </div>
 
-             <div className={styles.description}>
-            <div className={styles.salesInformation}>
-                <b>Price:{product.price} </b>
-                <mark>discount %:{product.discountPercentage}</mark>
-                <small>SKU code{product.sku}</small>
-            </div>
-
-            <div  className={styles.capacity}>
-                <p>weight:{product.weight}g</p>
-                <div>
-                    dimensions:
-                    <ul>
-                        <li>width:{product.dimensions.width}</li>
-                        <li>height:{product.dimensions.height}</li>
-                        <li>depth:{product.dimensions.depth}</li>
-                    </ul>
+                <div className={styles.stockInfo}>
+                    <small>left in stock: {product.stock} </small>
+                    <small>stock status: {product.availabilityStatus}</small>
                 </div>
-            </div>
-             </div>
-                <div><ReviewsComponents reviews={product.reviews}/></div>
+                <div className={styles.reviews}>
+                    <ReviewsComponents reviews={product.reviews}/></div>
 
             <div className={styles.info}>
                 <p>warranty:{product.warrantyInformation}</p>
