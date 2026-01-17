@@ -1,23 +1,23 @@
 import {createBrowserRouter} from "react-router-dom";
-import App from "../App.tsx";
 import UsersPage from "../pages/UsersPage.tsx";
-import PostsPage from "../pages/postsPage.tsx";
-import CommentsPage from "../pages/commentsPage.tsx";
+import PostsPage from "../pages/PostsPage.tsx";
+import CommentsPage from "../pages/CommentsPage.tsx";
+import Layout from "../layouts/layout.tsx";
 
 
 export const router=createBrowserRouter([
-    {path:'/',element:<App/>,children:[
+    {path:'/',element:<Layout/>,children:[
             {path:'users',element:<UsersPage/>,children:[
-                    {path:'jsonplaceholder', element:<div>users of jsonplaceholder pseudo page</div>},
-                    {path:'dummyjson', element:<div>users of dummyjson pseudo page</div>}
+                    {path:':source', element: <></>},
+                    {path:':source', element: <></>}
                 ]},
             {path:'posts',element:<PostsPage/>,children:[
-                    {path:'jsonplaceholder', element: <div>posts of jsonplaceholder pseudo page</div>},
-                    {path:'dummyjson', element: <div>posts of dummyjson pseudo page</div>}
+                    {path:':source', element:  <></>},
+                    {path:':source', element:  <></>}
                 ]},
             {path:'comments',element:<CommentsPage/>,children:[
-                    {path:'jsonplaceholder', element: <div>comments of jsonplaceholder pseudo page</div>},
-                    {path:'dummyjson', element: <div>comments of dummyjson pseudo page</div>}
+                    {path:':source', element:  <></>},
+                    {path:':source', element:  <></>}
                 ]},
         ]}
 ])
