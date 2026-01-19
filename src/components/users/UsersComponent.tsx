@@ -4,21 +4,23 @@ import {UserService} from "../../services/user-api.services.tsx";
 
 type Props = {
     source: string;
+    onSelectUser: (id: number) => void
 }
 
-export const UsersComponent=({source}:Props)=> {
+export const UsersComponent=({source,onSelectUser}:Props)=> {
     const [users,setUsers]=useState<IUserCombination[]>([])
     useEffect(()=>{
-      if(source === 'jsonplaceholder'){
-          UserService.getUsersPlaceholder().then(setUsers)
-      }
       if(source === 'dummyjson'){
           UserService.getUsersDummy().then(setUsers)
       }
     },[source])
     return (
         <>
-            {users.map(user=>(<UserComponent user={user} key={user.id}/>))}
+            {users.map(user=>(<UserComponent
+                                             user={user}
+                                             key={user.id}
+                                             onClick={()=> onSelectUser(user.id)}
+            />))}
 
         </>
     )

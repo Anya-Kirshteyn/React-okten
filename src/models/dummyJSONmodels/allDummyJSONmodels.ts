@@ -19,43 +19,6 @@ export type IOrderType = {
     totalQuantity: number;
 };
 
-
-
-export interface IDummyJsonPost {
-    id: number;
-    title: string;
-    body: string;
-    tags: string[];
-    reactions: Reactions;
-    views: number;
-    userId: number;
-}
-
-export interface Reactions {
-    likes: number;
-    dislikes: number;
-}
-
-
-
-
-export interface IDummyJsonComment {
-    id: number;
-    body: string;
-    postId: number;
-    likes: number;
-    user: CommentUser;
-}
-
-export interface CommentUser {
-    id: number;
-    username: string;
-    fullName: string;
-}
-
-
-
-
 export interface IDummyJsonUser {
     id: number;
     firstName: string;
