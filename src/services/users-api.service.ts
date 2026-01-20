@@ -1,11 +1,11 @@
-import type {IUsersResponse} from "../models/IUserModel.ts";
+import type {IUser, IUsersResponse} from "../models/IUserModel.ts";
 import {urls} from "../constants/Urls.ts";
 
 export const usersApiService = {
-    getAllUsers: async (): Promise<IUsersResponse> => {
+    getAllUsers: async (): Promise<IUser[]> => {
         const res = await fetch(urls.users.allUsers);
-        const data = await res.json();
+        const data: IUsersResponse = await res.json();
         console.log(data);
-        return data;
+        return data.users;
     }
 };

@@ -1,5 +1,5 @@
-export const CartsPage = {
-    return(
-        <CartsComponent/>
-    )
-}
+// export const CartsPage = {
+//     return(
+//         <CartsComponent/>
+//     )
+// }
