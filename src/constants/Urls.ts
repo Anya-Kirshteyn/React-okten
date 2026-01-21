@@ -7,6 +7,6 @@ export const urls = {
     },
     carts:{
         allCarts: baseURL+"/carts",
-        CartsById:(id:number)=> baseURL+'/carts/user'+id
+        CartsById:(id:number)=> baseURL+'/carts/'+id
     }
 }

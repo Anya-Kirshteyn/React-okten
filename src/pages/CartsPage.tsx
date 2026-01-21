@@ -1,5 +1,8 @@
-// export const CartsPage = {
-//     return(
-//         <CartsComponent/>
-//     )
-// }
+import {CartsComponent} from "../components/carts/CartsComponent.tsx";
+
+export const CartsPage=() => {
+    return(
+        <CartsComponent/>
+
+    )
+}

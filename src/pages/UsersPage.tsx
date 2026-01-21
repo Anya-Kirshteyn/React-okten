@@ -5,9 +5,9 @@ import {Outlet} from "react-router-dom";
 export const UsersPage = ()=>{
     return(
      <div>
-         <UsersComponent/>
-         <hr/>
          <Outlet/>
+         <hr/>
+         <UsersComponent/>
      </div>
     )
 }

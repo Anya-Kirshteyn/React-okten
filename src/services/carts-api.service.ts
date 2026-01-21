@@ -1,11 +1,9 @@
 import {urls} from "../constants/Urls.ts";
-import type {ICartsResponse} from "../models/ICartModel.ts";
+import type {ICart} from "../models/ICartModel.ts";
 
 export const cartsApiService = {
-    getCartsById: async (id:number): Promise<ICartsResponse> => {
+    getCartsById: async (id: number): Promise<ICart> => {
         const res = await fetch(urls.carts.CartsById(id));
-        const data = await res.json();
-        console.log(data);
-        return data;
+        return await res.json();
     }
 };
