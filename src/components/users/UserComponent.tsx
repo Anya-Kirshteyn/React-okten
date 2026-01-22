@@ -22,7 +22,6 @@ export const UserComponent:FC<UserProps> = ({user})=>{
             <button className={'my-5'} onClick={onButtonClickNavigateCartsById}>Click for Carts of User
             </button>
             <hr/>
-            {}
         </div>
     )
 }
