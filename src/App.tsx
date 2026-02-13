@@ -1,12 +1,13 @@
 
-import './App.css'
+
+import {UsersComponent} from "./components/usersComponent.tsx";
 
 function App() {
 
 
   return (
     <>
-
+<UsersComponent/>
     </>
   )
 }
