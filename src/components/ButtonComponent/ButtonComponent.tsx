@@ -1,9 +1,9 @@
 import {useContext} from "react";
-import {ButtonThemeContext} from "../../context/buttonThemeContext.tsx";
+import { ThemeContext} from "../../context/buttonThemeContext.tsx";
 
 
-export const ThemeButtonComponent = () => {
-    const {toggleTheme}=useContext(ButtonThemeContext);
+export const ButtonComponent = () => {
+    const {toggleTheme}=useContext(ThemeContext);
 
 return(
     <>

@@ -1,8 +1,8 @@
 import {useContext} from "react";
-import {ButtonThemeContext} from "../../context/buttonThemeContext.tsx";
+import {ThemeContext} from "../../context/buttonThemeContext.tsx";
 
 export const LeftBranchGirl = () => {
-  const {themeValue}=useContext(ButtonThemeContext);
+  const {themeValue}=useContext(ThemeContext);
 
 
     return (

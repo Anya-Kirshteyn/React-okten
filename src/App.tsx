@@ -1,7 +1,7 @@
 import {LeftBranchMain} from "./components/LeftBranch/LeftBranchMain.tsx";
 import {RightBranchMain} from "./components/RightBranch/RightBranchMain.tsx";
 import {useState} from "react";
-import {ButtonThemeContext} from "./context/buttonThemeContext.tsx";
+import { ThemeContext} from "./context/buttonThemeContext.tsx";
 import './App.css'
 
 
@@ -16,7 +16,7 @@ const toggleTheme = () => {
 
   return (
     <>
-      <ButtonThemeContext.Provider value={{
+      <ThemeContext.Provider value={{
         themeValue:theme,
         toggleTheme
       }}>
@@ -30,7 +30,7 @@ const toggleTheme = () => {
       <RightBranchMain/>
     </div>
 
-        </ButtonThemeContext.Provider>
+        </ThemeContext.Provider>
     </>
   )
 }

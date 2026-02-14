@@ -7,5 +7,5 @@ interface IButtonThemeContext {
 }
 
 
-export const ButtonThemeContext =
+export const ThemeContext =
     createContext<IButtonThemeContext>({themeValue: 'light',toggleTheme: () => {}});
