@@ -8,6 +8,9 @@ function App() {
   console.log(users)
   return (
     <>
+        {users &&
+            users.map(user => (<div key={user.id}>{user.name}</div>))
+        }
 
     </>
   )
