@@ -8,6 +8,7 @@ export const LeftBranchGirl = () => {
     return (
 <div>LeftBranchGirl
     <hr/>
+
     <p>theme color is:{themeValue}</p>
 
 

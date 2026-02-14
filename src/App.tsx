@@ -2,7 +2,7 @@ import {LeftBranchMain} from "./components/LeftBranch/LeftBranchMain.tsx";
 import {RightBranchMain} from "./components/RightBranch/RightBranchMain.tsx";
 import {useState} from "react";
 import {ButtonThemeContext} from "./context/buttonThemeContext.tsx";
-import {App.}
+import './App.css'
 
 
 function App() {
