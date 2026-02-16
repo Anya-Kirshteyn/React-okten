@@ -12,7 +12,7 @@ interface IUser {
 }
 
 type userSliceType = {
-    users:IUser
+    users:IUser[]
 }
 
 const initialState:userSliceType={users:[]};
