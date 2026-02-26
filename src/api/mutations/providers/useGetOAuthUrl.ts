@@ -1,4 +1,5 @@
 import {useLocation} from "react-router-dom";
+import {useMutation} from "@tanstack/react-query";
 
 interface RequestProps{
     providerKind:string
@@ -16,7 +17,7 @@ export const useGetOAuthUrl = ()=>{
     const {pathname}=useLocation()
 
     return useMutation({
-        mutationFn: async ({providerKind}:Promice<Response>=>{
+        mutationFn: async ({providerKind}:RequestProps):Promise<Response>=>{
             return putPrivate({
                 route: `${route}/${providerKind}/oauth/authorize`,
                 body:{

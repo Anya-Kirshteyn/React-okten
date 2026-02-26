@@ -1,4 +1,5 @@
 import {useLocation} from "react-router-dom";
+import {useMutation} from "@tanstack/react-query";
 
 interface Input{
     prividerKind : string;
@@ -12,7 +13,7 @@ export const useConnectOAuth = ({providerKind}:Input)=> {
     const { pathname}=useLocation()
 
 return useMutation({
-    mutationFn: async (body:RequestProps):Promice<OAuthResponse>=>{
+    mutationFn: async (body:RequestProps):Promise<OAuthResponse>=>{
         return putPrivate({
             route: `${route}/${providerKind}/oauth/token`,
             body:{

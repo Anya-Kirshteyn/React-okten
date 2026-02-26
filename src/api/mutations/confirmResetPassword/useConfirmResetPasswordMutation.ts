@@ -1,4 +1,5 @@
 import type {ErrorResponse} from "react-router-dom";
+import {useMutation} from "@tanstack/react-query";
 
 interface RequestProps {
     newPassword: string;
