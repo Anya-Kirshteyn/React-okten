@@ -16,6 +16,6 @@ export const route=createBrowserRouter([
         path:'/posts', element: <PostsPage/>
     },
     {
-        path:'/complex',element:<ComplexPage/>
+        path:'/complex/:userId',element:<ComplexPage/>
     }
 ])
